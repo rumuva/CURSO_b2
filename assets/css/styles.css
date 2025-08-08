@@ -1,0 +1,48 @@
+
+:root{
+  --brand:#0f4c81;
+  --accent:#1b5f99;
+  --text:#1b1b1b;
+  --muted:#6b7280;
+  --bg:#ffffff;
+  --card:#f7fafc;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:Arial, Helvetica, sans-serif;color:var(--text);background:var(--bg);}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+.layout{display:flex;min-height:100vh}
+.sidebar{width:280px;background:var(--brand);color:white;padding:24px;position:sticky;top:0;align-self:flex-start}
+.sidebar .logo{display:flex;align-items:center;gap:12px;margin-bottom:24px}
+.sidebar nav a{display:block;color:white;padding:10px 12px;border-radius:10px;margin-bottom:6px;font-weight:bold}
+.sidebar nav a.active,.sidebar nav a:hover{background:rgba(255,255,255,0.15)}
+
+.content{flex:1;padding:28px;max-width:1100px;margin:0 auto}
+.card{background:var(--card);padding:20px;border-radius:16px;box-shadow:0 1px 4px rgba(0,0,0,0.06);margin-bottom:18px}
+.h1{font-size:28px;margin:0 0 12px 0;color:var(--brand);}
+.h2{font-size:22px;margin:16px 0 8px 0;color:var(--accent);}
+.badge{display:inline-block;background:var(--brand);color:white;padding:4px 10px;border-radius:999px;font-size:12px;margin-right:6px}
+.button{display:inline-block;padding:10px 14px;border-radius:12px;border:1px solid var(--brand);}
+.button:hover{background:var(--brand);color:white;text-decoration:none}
+
+.audio-controls{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+code,pre{background:#111827; color:#e5e7eb; padding:12px;border-radius:10px;overflow:auto}
+
+.quiz-question{margin:18px 0}
+.quiz-question h4{margin:0 0 8px 0}
+.quiz-options label{display:block;margin:6px 0;padding:8px;border-radius:8px;border:1px solid #e5e7eb;cursor:pointer}
+.quiz-options input{margin-right:8px}
+.quiz-submit{margin-top:16px}
+.quiz-score{font-weight:bold;margin-top:10px}
+
+.transcript{background:white;border-left:4px solid var(--brand);padding:14px;border-radius:12px}
+
+.footer{margin-top:28px;font-size:12px;color:var(--muted)}
+
+@media print{
+  .sidebar{display:none}
+  .content{max-width:100%;padding:0}
+  .button{display:none}
+  .card{box-shadow:none;border:1px solid #e5e7eb}
+}

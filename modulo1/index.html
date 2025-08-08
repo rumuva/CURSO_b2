@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Módulo 1 – Intro + Test</title>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body>
+  <div class="layout">
+    
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="assets/img/logo.svg" alt="Logo" style="height:48px"/>
+      </div>
+      <nav>
+        <a href="index.html" class="">🏠 Inicio</a>
+        <a href="modulo1/index.html" class="active">📘 Módulo 1 · Intro + Test</a>
+        <a href="modulo2/index.html" class="">📘 Módulo 2 · Gramática</a>
+      </nav>
+      <div style="margin-top:24px;font-size:12px;opacity:.9">
+        <div class="badge">B2</div> Curso de Inglés · Rubén Muñoz
+      </div>
+    </aside>
+    
+    <main class="content">
+      
+<div class="card">
+  <div class="h1">Módulo 1 · Introducción y Diagnóstico</div>
+  <p>Objetivo: presentarte el curso y medir tu nivel actual con un test diagnóstico.
+     Tras el listening verás una <strong>transcripción</strong> para repasar.</p>
+
+  <div class="audio-controls">
+    <button class="button" onclick="speak('Welcome to the B2 English course. In this module, you will take a short diagnostic test to identify your strengths and areas to improve.', 'en-GB')">▶ Play (en-GB)</button>
+    <button class="button" onclick="speakStop()">■ Stop</button>
+    <a class="button" href="#" onclick="window.print();return false;">🖨 Exportar a PDF</a>
+  </div>
+</div>
+
+<div class="card">
+  <div class="h2">Listening (Introducción)</div>
+  <p>Escucha el audio y responde las preguntas. Después podrás abrir la transcripción para repasar.</p>
+  <div class="audio-controls">
+    <button class="button" onclick="speak('You are about to take a short placement test. Read the questions carefully. Choose only one option. Good luck!', 'en-GB')">▶ Play (en-GB)</button>
+    <button class="button" onclick="speakStop()">■ Stop</button>
+  </div>
+  <details class="transcript" style="margin-top:10px;">
+    <summary>🎧 Transcript for Review</summary>
+    <p><em>You are about to take a short placement test. Read the questions carefully. Choose only one option. Good luck!</em></p>
+  </details>
+</div>
+
+<div id="quiz"></div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    Quiz('#quiz', [{"q": "Choose the correct option: If I ____ more time, I would learn another language.", "options": ["have", "had", "would have", "will have"], "answer": "B"}, {"q": "Find the correct form: She has lived in London ____ 2018.", "options": ["for", "since", "from", "by"], "answer": "B"}, {"q": "Reported speech: \u201cI can\u2019t come today,\u201d he said. \u2192 He said that he ____ come that day.", "options": ["can\u2019t", "couldn\u2019t", "can", "could"], "answer": "B"}, {"q": "Passive: They are repairing the road. \u2192 The road ____ .", "options": ["is repaired", "is being repaired", "has been repaired", "was being repaired"], "answer": "B"}, {"q": "Relative clauses (defining): The person ____ called you is my tutor.", "options": ["which", "whose", "who", "whom"], "answer": "C"}, {"q": "Modal of deduction: She must ____ the train; she left 10 minutes ago and it\u2019s only a 5\u2011minute walk.", "options": ["catch", "have caught", "be catching", "have been catching"], "answer": "B"}, {"q": "Inversion after negative adverbials: Rarely ____ such a beautiful view.", "options": ["I have seen", "have I seen", "I saw", "did I see"], "answer": "B"}, {"q": "Wish/If only: I wish I ____ harder last year.", "options": ["studied", "had studied", "have studied", "would study"], "answer": "B"}, {"q": "Gerunds/Infinitives: I regret ____ him the truth; he was really upset.", "options": ["to tell", "telling", "to have told", "having told"], "answer": "D"}, {"q": "Linkers: He was tired; ____ , he finished the report on time.", "options": ["however", "although", "despite", "in spite"], "answer": "A"}]);
+  });
+</script>
+
+      <div class="footer">© 2025 Rubén Muñoz · Curso B2 · Generado para GitHub Pages</div>
+    </main>
+  </div>
+</body>
+</html>
