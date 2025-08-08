@@ -1,7 +1,7 @@
 
 # Curso_B2 – Publicación en GitHub Pages
 
-Este paquete está listo para subirlo a **GitHub Pages** como un sitio web estático.
+Este paquete está listo para subirlo oara **GitHub Pages** como un sitio web estático.
 
 ## Pasos rápidos
 1. Crea un repositorio en GitHub llamado, por ejemplo, `curso-b2`.
